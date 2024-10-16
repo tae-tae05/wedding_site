@@ -1,0 +1,89 @@
+body {
+    background-color: peachpuff !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    flex: 0 80px;
+    text-shadow: 1px 1px 1px rgb(80, 167, 255);
+    font-size: 18px;
+}
+
+img {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    max-width:100%
+}
+
+main {
+    background-color: rgb(255, 243, 233);
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(107, 193, 255);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+footer {
+    color: rgb(77, 139, 255);
+    flex: 0 30px;
+}
+
+menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row !important;
+    list-style: none;
+}
+
+.navbar-brand {
+    padding-left: 0.5em;
+    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+}
+
+menu .nav-item {
+    padding: 0 0.3em;
+    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+}
+
+footer a {
+    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+    float: right;
+}
+
+.footer1 {
+    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+}
+
+.button1 {
+    background-color: rgb(255, 247, 226);
+    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+    border: 2px solid rgb(102, 129, 193);
+    color: rgb(102, 129, 193);
+}
+
+.button2 {
+    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+    border: 2px solid rgb(102, 129, 193);
+    color: rgb(102, 129, 193);
+}
+
+@media (max-height: 600px) {
+    header {
+      display: none;
+    }
+    footer {
+      display: none;
+    }
+    main {
+      flex: 1 100vh;
+    }
+  }
