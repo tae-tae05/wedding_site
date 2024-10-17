@@ -7,6 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -14,6 +16,9 @@ header {
     flex: 0 80px;
     text-shadow: 1px 1px 1px rgb(80, 167, 255);
     font-size: 18px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -53,6 +58,7 @@ menu {
 menu .nav-item {
     padding: 0 0.3em;
     font-family: "Bradley Hand", "Comic Sans MS", cursive;
+    
 }
 
 footer a {
@@ -66,14 +72,14 @@ footer a {
 
 
 
-/* @media (max-height: 600px) {
-    header {
-      display: none;
-    }
-    footer {
-      display: none;
-    }
-    main {
-      flex: 1 100vh;
-    }
-  } */
+@media (max-height: 600px) {
+header {
+    display: none;
+}
+footer {
+    display: none;
+}
+main {
+    flex: 1 100vh;
+}
+}
