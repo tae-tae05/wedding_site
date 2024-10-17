@@ -1,3 +1,16 @@
+:root {
+    --nav-color: #ffffff;
+    --nav-text: #000000;
+    --primary-color: #42e5a1;
+    --secondary-color: #62c9e8;
+    --hover-color: #6862d7;
+}
+
+h2 {
+    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+    margin-left: 1em;
+}
+
 body {
     background-image: url('leaves.jpeg');
     background-repeat: no-repeat;
@@ -11,75 +24,45 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: white;
-    flex: 0 80px;
-    text-shadow: 1px 1px 1px rgb(80, 167, 255);
-    font-size: 18px;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+.container {
+    background-color: var(--nav-color);
+    font-size: 1.2rem;
+    font-family: "Merriweather Sans", sans-serif;
+    height: 80px;
 }
 
-img {
+.navbar {
+    flex: 0 1 auto;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    max-width:100%
-}
-
-main {
-    background-color: rgb(255, 243, 233);
-    flex: 1 calc(100vh - 110px);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 
-footer {
-    color: rgb(77, 139, 255);
-    flex: 0 30px;
-}
-
-menu {
-    flex: 1;
+.navbar ul {
     display: flex;
-    flex-direction: row !important;
-    list-style: none;
 }
 
-
-.navbar-brand {
-    padding-left: 0.5em;
-    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+.container .navbar {
+    justify-content: space-between;
 }
 
-menu .nav-item {
-    padding: 0 0.3em;
-    font-family: "Bradley Hand", "Comic Sans MS", cursive;
-    
+.navbar ul li {
+    list-style-type: none;
 }
-
-footer a {
-    font-family: "Bradley Hand", "Comic Sans MS", cursive;
-    float: right;
+  
+.container .navbar ul li {
+    padding: 10px;
+    margin: 0 10px;
 }
-
-.footer1 {
-    font-family: "Bradley Hand", "Comic Sans MS", cursive;
+  
+.navbar a {
+    color: var(--nav-text);
+    font-weight: bold;
 }
-
-
-
-@media (max-height: 600px) {
-header {
-    display: none;
-}
-footer {
-    display: none;
-}
-main {
-    flex: 1 100vh;
-}
-}
+  
+.navbar a:hover {
+    color: var(--secondary-color);
+} 
